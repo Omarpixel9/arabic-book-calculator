@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="page.js"></script>
+    <link rel="stylesheet" href="page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <meta charset="utf-8" />
+    <style>
+    body {
+      font-family: Cairo;
+      font-weight: bold;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: right;
+      font-family: Cairo;
+      font-weight: bold;
+    }
+
+    .button {
+      font-family: Cairo;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .container .textF {
+      text-align: right;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .pContainer {
+       text-align: center;
+      }
+}
+    </style>
+</head>
+
+<body>
+    <div class="h1Container">
+        <h1>حاسب وقت القراءة</h1>
+    </div>
+    <div class="container">
+      <p style="text-align: center;">
+        .هذا  الموقع يحسب كمية الوقت التي تحتاجها لقراءة كتاب ما
+
+</p>
+      <p>
+        .لإستخدامه, اكتب رقم عدد صفحات الكتاب في الحقل الأول, و مقدار الوقت <i>(بالدقائف)</i> الذي تستغرقه لإكمال صفحة واحدة من الكتاب</p>
+      </p>
+        <form id="disForm">
+            <input type="text" name="numPages" class="textF" id="numPages" placeholder="عدد الصفحات  " ><br/>
+
+            </br/>
+            <input type="text" name="pagesPerMin" class="textF" id="minsPerPage" placeholder="الدقائق بالصفحة الواحدة" />
+            <br/>
+            </br/>
+            <input type="button" value="احسب" onclick="calculateMinsAr()" class="button" id="butt" />
+            <br/>
+          </br/>
+            </form>
+          </div>
+          <div class="pContainer">
+            <span id="result" style="text-align: right;">
+              ستحتاج <span id="mins1">0 دقيقة</span> أو <span id="mins2">0.00 ساعة, أو إذا كنت تريد تقريبها, ستكون 0 ساعة </span> لتكملة قراءة هذا الكتاب
+            </span>
+      </div>
+      <a href="index.html">English</a>
+</body>
+
+</html>

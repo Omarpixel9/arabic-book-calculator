@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="page.js"></script>
+    <link rel="stylesheet" href="page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="h1Container">
+        <h1>Book Calculator</h1>
+    </div>
+    <div class="container">
+      <p>
+        This tool calculates the number of hours/minutes you'll consume to complete reading a book.
+      </p>
+      <p>
+        To use it, simply write the total number of pages of the book in the first text field, and how much minutes you take to read one page of that book.</p>
+      </p>
+        <form id="disForm">
+            <input type="text" name="numPages" class="textF" id="numPages" placeholder="Number of Pages" /><br/>
+
+            </br/>
+            <input type="text" name="pagesPerMin" class="textF" id="minsPerPage" placeholder="Minutes Per One Page" />
+            <br/>
+            </br/>
+            <input type="button" value="CALCULATE" onclick="calculateMins()" class="button" id="butt" />
+            <br/>
+          </br/>
+            </form>
+          </div>
+          <div class="pContainer">
+            <span id="result">
+              It will take <span id="mins1">0 minutes </span>to complete reading this book or (if you'd like) <span id="mins2">0.00 hours. That's about 0 hours.</span>
+            </span>
+            <br/>
+            
+          </br/>
+            <a href="ar.html" style="margin-top: 10px;">العربية</a>
+      </div>
+</body>
+
+</html>
